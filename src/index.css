@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: 'Candara', Arial, sans-serif;
+}
+
+/* main page */
+.bg-color{
+  background-color: #043873
+}
+
+.bg-gold{
+  background-color: #FCCD3F;
+}
+
+.text-color{
+  color: #043873
+}
+
+.custom-calendar .react-datepicker__day--highlighted {
+  @apply bg-pink-500 text-white; /* Apply Tailwind CSS classes */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle #1e3c92 */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1d4ed8 0%, rgba(12, 73, 240, 0)  100%);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3c92;
+}
+
+
+/* csss */
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%) scale(0.1);
+  }
+}
+
+.animate-loading {
+  animation: loading 3s linear infinite;
+}
+
+
+
